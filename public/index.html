@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+   
+    <script>
+      window.MAP_STYLE_DEFAULT = "mapbox://styles/blishten/ck1hsullb06lw1cmyzz7wrycl"; //mapbox light v7 style without the national parks, national park labels or landuse
+      //source names
+      window.SRC_FROM_POLYGONS = "wdpa_from_polygons";
+      window.SRC_FROM_POINTS = "wdpa_from_points";
+      window.SRC_TO_POLYGONS = "wdpa_to_polygons";
+      window.SRC_TO_POINTS = "wdpa_to_points";
+      //layer names
+      //new layers
+      window.LYR_TO_NEW_POLYGON = "to_new_polygon";
+      window.LYR_TO_NEW_POINT = "to_new_point";
+      window.LYR_TO_LABEL = "to_label";
+      //deleted layers
+      window.LYR_FROM_DELETED_POLYGON = "from_deleted_polygon";
+      window.LYR_FROM_DELETED_POINT = "from_deleted_point";
+      //attribute change layer
+      window.LYR_TO_CHANGED_ATTRIBUTE = "to_changed";
+      //geometry change layers - original geometries
+      window.LYR_FROM_GEOMETRY_POINT_TO_POLYGON = "from_geometry_point_to_polygon"; //for rendering point to polygons
+      window.LYR_FROM_GEOMETRY_POINT_COUNT_CHANGED_LINE = "from_geometry_point_count_changed_line"; //for rendering geometries before they were changed
+      window.LYR_FROM_GEOMETRY_SHIFTED_LINE = "from_geometry_shifted"; //for geometries before they shifted
+      //geometry change layers - new geometries
+      window.LYR_TO_GEOMETRY_POINT_TO_POLYGON = "to_geometry_point_to_polygon"; 
+      window.LYR_TO_GEOMETRY_POINT_TO_POLYGON_LINE = "to_geometry_point_to_polygon_line"; 
+      window.LYR_TO_GEOMETRY_POINT_COUNT_CHANGED_POLYGON = "to_geometry_point_count_changed_polygon";  
+      window.LYR_TO_GEOMETRY_POINT_COUNT_CHANGED_POLYGON_LINE = "to_geometry_point_count_changed_polygon_ine";  
+      window.LYR_TO_GEOMETRY_SHIFTED_POLYGON = "to_geometry_shifted_polygon"; 
+      window.LYR_TO_GEOMETRY_SHIFTED_POLYGON_LINE = "to_geometry_shifted_polygon_line"; 
+      //no change layers
+      window.LYR_TO_POLYGON = "to_polygon";
+      window.LYR_TO_POINT = "to_point";
+      //selection layers
+      window.LYR_FROM_SELECTED_POINT = "from_selected_point";
+      window.LYR_FROM_SELECTED_LINE = "from_selected_line";
+      window.LYR_FROM_SELECTED_POLYGON = "from_selected_polygon";
+      window.LYR_TO_SELECTED_POINT = "to_selected_point";
+      window.LYR_TO_SELECTED_LINE = "to_selected_line";
+      window.LYR_TO_SELECTED_POLYGON = "to_selected_polygon";
+      // window.TILES_PREFIX = "https://storage.googleapis.com/geeimageserver.appspot.com/vectorTiles/"; //tippeecanoe tiles
+      // window.TILES_SUFFIX = "/tilesets/{z}/{x}/{y}.pbf"; //tippeecanoe tiles
+      window.TILES_PREFIX = "https://geospatial.jrc.ec.europa.eu/geoserver/gwc/service/wmts?layer=marxan:"; //JRC geoserver
+      window.TILES_SUFFIX = "&tilematrixset=EPSG:900913&Service=WMTS&Request=GetTile&Version=1.0.0&Format=application/x-protobuf;type=mapbox-vector&TileMatrix=EPSG:900913:{z}&TileCol={x}&TileRow={y}"; //JRC geoserver
+      // window.TILES_PREFIX = "https://61c92e42cb1042699911c485c38d52ae.vfs.cloud9.eu-west-1.amazonaws.com:8082/geoserver/gwc/service/wmts?layer=andrew:"; --AWS geoserver - fails
+      //tippeecanoe tiles
+      </script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <title>WDPA Version Tracker</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
