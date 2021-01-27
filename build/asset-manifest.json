@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.7b4a2527.chunk.css",
+    "main.js": "./static/js/main.86562735.chunk.js",
+    "main.js.map": "./static/js/main.86562735.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.225f5cc0.js",
+    "runtime-main.js.map": "./static/js/runtime-main.225f5cc0.js.map",
+    "static/css/2.6b223ed8.chunk.css": "./static/css/2.6b223ed8.chunk.css",
+    "static/js/2.54c22014.chunk.js": "./static/js/2.54c22014.chunk.js",
+    "static/js/2.54c22014.chunk.js.map": "./static/js/2.54c22014.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.c695f9cf7fcf634599fbc297cda8e271.js": "./precache-manifest.c695f9cf7fcf634599fbc297cda8e271.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.6b223ed8.chunk.css.map": "./static/css/2.6b223ed8.chunk.css.map",
+    "static/css/main.7b4a2527.chunk.css.map": "./static/css/main.7b4a2527.chunk.css.map",
+    "static/js/2.54c22014.chunk.js.LICENSE.txt": "./static/js/2.54c22014.chunk.js.LICENSE.txt",
+    "static/media/biopama_logo.d688f2ed.svg": "./static/media/biopama_logo.d688f2ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.225f5cc0.js",
+    "static/css/2.6b223ed8.chunk.css",
+    "static/js/2.54c22014.chunk.js",
+    "static/css/main.7b4a2527.chunk.css",
+    "static/js/main.86562735.chunk.js"
+  ]
+}
