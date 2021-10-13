@@ -59,6 +59,7 @@
 .sliderContainer {
   margin: 16px 40px 4px 40px;
   height: 40px;
+      overflow: auto;
 }
 
 .fromVersion {
