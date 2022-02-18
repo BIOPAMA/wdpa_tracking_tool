@@ -12,6 +12,11 @@
   background-color: #fff;
 }
 
+#root > div.appBar > div > div.appBarContent.noselect > div.sliderContainer > div{
+      width: 100%!important;
+    margin: auto!important;
+    OVERFLOW: visible!important;
+}
 
 .appBar > div{
   width: 100%;
